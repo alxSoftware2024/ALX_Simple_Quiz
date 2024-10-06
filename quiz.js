@@ -10,7 +10,7 @@ function checkAnswer() {
     const userAnswer=0;
     
     for(i = 0; i < ele.length; i++) {
-      const  userAnswer=Number(ele[i].value);
+      const  userAnswer=String(ele[i].value);
        if(ele[i].checked)
        {
         if(userAnswer === correctAnswer)
