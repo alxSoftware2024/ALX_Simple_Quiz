@@ -14,6 +14,7 @@ function checkAnswer() {
         ele.forEach(pa=>
           {
             const  userAnswer=String(pa.value);
+            if(pa.checked){
             if (userAnswer === correctAnswer)
             {
                 feedback.textContent="Correct! Well done.";
@@ -21,7 +22,7 @@ function checkAnswer() {
             if(userAnswer!==correctAnswer)
             {
                 feedback.textContent="That's incorrect. Try again!";
-            }
+            }}
           });
         /*
         if (userAnswer === correctAnswer)
