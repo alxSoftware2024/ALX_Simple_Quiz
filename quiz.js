@@ -10,17 +10,17 @@ function checkAnswer() {
 
     for(i = 0; i < ele.length; i++) {
       const  userAnswer=ele[i].value;
-       if(ele[i].checked)
-       {
-        if(correctAnswer==userAnswer)
+       //if(ele[i].checked)
+       //{
+        if(userAnswer === correctAnswer)
         {
             feedback.textContent="Correct! Well done.";
         }
-        if(userAnswer!=correctAnswer)
+        if(userAnswer!==correctAnswer)
         {
             feedback.textContent="That's incorrect. Try again!";
         }
-       }
+      // }
     }
   
 }
