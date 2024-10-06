@@ -7,9 +7,11 @@ const submitanswer=document.getElementById('submit-answer');
 function checkAnswer() {
     const correctAnswer='4';
     var ele = document.getElementsByName('quiz');
-
+    const userAnswer=0;
+    if(userAnswer === correctAnswer)
+    {}
     for(i = 0; i < ele.length; i++) {
-      const  userAnswer=ele[i].value;
+      //const  userAnswer=ele[i].value;
        if(ele[i].checked)
        {
         if(userAnswer === correctAnswer)
