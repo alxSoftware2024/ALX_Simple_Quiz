@@ -10,8 +10,8 @@ function checkAnswer() {
 
     for(i = 0; i < ele.length; i++) {
       const  userAnswer=ele[i].value;
-       //if(ele[i].checked)
-       //{
+       if(ele[i].checked)
+       {
         if(userAnswer === correctAnswer)
         {
             feedback.textContent="Correct! Well done.";
@@ -20,7 +20,7 @@ function checkAnswer() {
         {
             feedback.textContent="That's incorrect. Try again!";
         }
-      // }
+      }
     }
   
 }
