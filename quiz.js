@@ -7,8 +7,6 @@ const submitanswer=document.getElementById('submit-answer');
 function checkAnswer() {
     const correctAnswer='4';
     var ele = document.getElementsByName('quiz');
-    const userAnswer=0;
-    
     for(i = 0; i < ele.length; i++) {
       const  userAnswer=String(ele[i].value);
        if(ele[i].checked)
