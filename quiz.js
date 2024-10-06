@@ -11,7 +11,7 @@ function checkAnswer() {
       const  userAnswer=String(ele[i].value);
        if(ele[i].checked)
        {
-        if(userAnswer === correctAnswer)
+        if (userAnswer === correctAnswer)
         {
             feedback.textContent="Correct! Well done.";
         }
